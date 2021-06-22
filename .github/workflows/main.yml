@@ -28,7 +28,7 @@ jobs:
       - uses: microsoft/playwright-github-action@v1
 
       - name: Install dependencies and run tests
-        run: npm install && npx folio --param browserName=chromium
+        run: npm install && npx folio --param browserName=chromium video
         
       - uses: actions/upload-artifact@v2
         if: ${{ always() }}
